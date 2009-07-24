@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="toggle.js"></script>
+</head>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		padding: 50px;
+	}
+	#wrapper {
+		width: 200px;
+		border:1px solid black;
+	}
+	#header {
+		height: 20px;
+		background: green;
+		color: white;
+		margin: 5px;
+		border: 1px solid black;
+		text-align: center;
+		padding: 5px;
+	}
+	#content {
+		padding: 5px;
+	}
+	.plus {
+		height: 10px;
+		width: 10px;
+		background: white url(sprite.png) top;
+		border:1px solid black;
+		content: '+';
+		float: right;
+		color: black;
+	}
+	.minus {
+		height: 10px;
+		width: 10px;
+		background: white url(sprite.png) bottom;
+		border:1px solid black;
+		content: '-';
+		float: right;
+		color: black;
+	}
+</style>
+<body>
+	<div id="wrapper">
+     	<div id="header" toggle="content" toggleViewClass="minus" toggleHideClass="plus" toggleElement="div">
+          <p>Collapsible Info</p>
+          </div>
+          <div id="content">
+          <p>This is the content that is going to be toggled. This can contain whatever content you--like, cats, dogs ... whatever.</p>
+          </div>
+     </div>
+
+
+</body>
+</html>
